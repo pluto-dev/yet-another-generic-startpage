@@ -30,6 +30,7 @@ const LinkGroup = styled.ul`
   `}
 `
 const Link = styled.li`
+  ${({ theme: { color } }) => css`
   position: relative;
   list-style: none;
   > a {
@@ -46,7 +47,10 @@ const Link = styled.li`
       position: absolute;
       left: -0.75rem;
     }
-  }
+    :hover {
+      color: ${color.primary.bg};
+    }
+  `}
 `
 
 type GroupProps = BookmarkGroup & { count: number }
