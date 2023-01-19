@@ -2,10 +2,10 @@ import { css } from "@emotion/react"
 import styled from "@emotion/styled/macro"
 
 import { Changelog } from "./Changelog/Changelog"
-import { latestVersion } from "./Changelog/data"
-import { useVersion } from "./Changelog/VersionContext"
+// import { latestVersion } from "./Changelog/data"
+// import { useVersion } from "./Changelog/VersionContext"
+// import { useUrlHash } from "./components/HashRouter/utils/useUrlHash"
 import { ContentSwitch, HashRouter, HashRoutes } from "./components"
-import { useUrlHash } from "./components/HashRouter/utils/useUrlHash"
 import { Settings } from "./Settings/Settings"
 import { Startpage } from "./Startpage/Startpage"
 
@@ -36,7 +36,7 @@ const Layout = styled.div`
   `}
 `
 
-const changelogHash = "#changelog"
+// const changelogHash = "#changelog"
 
 const StartpageContent = () => (
   <ContentSwitch leftContent={Startpage} rightContent={Settings} />
@@ -47,15 +47,15 @@ const routes: HashRoutes = {
 }
 
 const App = () => {
-  const [version, setVersion] = useVersion()
-  const urlHash = useUrlHash()
+  // const [version, setVersion] = useVersion()
+  //const urlHash = useUrlHash()
 
-  if (version !== latestVersion) {
-    setVersion(latestVersion)
-    window.location.hash = changelogHash
-  }
+  // if (version !== latestVersion) {
+  //   setVersion(latestVersion)
+  //   window.location.hash = changelogHash
+  // }
 
-  const showChangelog = urlHash === changelogHash
+  //const showChangelog = urlHash === changelogHash
   const linkProps = {
     // href: showChangelog ? "#" : changelogHash,
     // children: showChangelog ? "Startpage" : "Changelog",
