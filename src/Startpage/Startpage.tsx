@@ -5,7 +5,6 @@ import { Surface } from "../components/Surface"
 import { Bookmarks } from "./Bookmarks"
 import { Headline } from "./Headline"
 import { Image } from "./Image"
-import { Searchbar } from "./Searchbar"
 
 const Content = styled.div`
   ${({ theme: { space } }) => css`
@@ -24,7 +23,6 @@ export const Startpage = () => {
       <Image />
       <Content>
         <Headline />
-        <Searchbar />
         <Bookmarks />
       </Content>
     </Surface>
