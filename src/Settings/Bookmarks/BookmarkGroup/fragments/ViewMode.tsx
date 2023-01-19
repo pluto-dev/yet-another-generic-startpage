@@ -29,7 +29,7 @@ export const ViewMode = ({
         icon={Plus}
         label={`Add new bookmark to ${label}`}
         onClick={addBookmark}
-        disabled={bookmarkCount >= 4}
+        //disabled={bookmarkCount >= 4}
       />
       <IconButton icon={Edit3} label={`Edit group ${label}`} onClick={onEdit} />
       <IconButton
