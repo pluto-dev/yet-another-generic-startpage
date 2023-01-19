@@ -57,8 +57,10 @@ const App = () => {
 
   const showChangelog = urlHash === changelogHash
   const linkProps = {
-    href: showChangelog ? "#" : changelogHash,
-    children: showChangelog ? "Startpage" : "Changelog",
+    // href: showChangelog ? "#" : changelogHash,
+    // children: showChangelog ? "Startpage" : "Changelog",
+    href: "#",
+    children: "Startpage",
   }
 
   return (
